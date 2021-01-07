@@ -1,12 +1,43 @@
+$blue: #5160a4;
+$silver: #f1f2f5;
+$silverD: #727272;
+
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
 
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1160px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    color: $blue;
+
+    &.hash {
+        letter-spacing: 1.5px;
+        font-size: 60px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+p {
+    margin-top: 0;
+    letter-spacing: 1.3px;
+
+    &.max {
+        color: $silverD;
+        font-size: 35px;
+        line-height: 24px;
+    }
 }

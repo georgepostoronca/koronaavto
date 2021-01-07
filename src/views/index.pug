@@ -2,9 +2,10 @@ extends layouts/default
 include helpers/mixins
 
 block variables
-	- const title = "gulp-pug-starter"
+	- const title = "korona avto"
 
 block content
+	include ../blocks/modules/detail/detail
 
 block scripts
 	script(src="js/main.js")
