@@ -1,0 +1,144 @@
+.makemoney {
+  position: relative;
+
+  &__img {
+    .container {
+      position: relative;
+    }
+
+    img {
+      width: 338px;
+      position: absolute;
+      right: 18px;
+      top: -84px;
+    }
+  }
+
+  &__wrap {
+    overflow: hidden;
+  }
+
+  &__content {
+    padding-bottom: 135px;
+
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+
+        &:nth-child(1) {
+          picture {
+            img {
+              width: 133px;
+              height: 75px;
+            }
+          }
+        }
+
+        &:nth-child(2) {
+          picture {
+            img {
+              width: 70px;
+              height: 97px;
+              margin-top: 31px;
+            }
+          }
+        }
+
+        &:nth-child(3) {
+          picture {
+            img {
+              width: 91px;
+              height: 122px;
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          picture {
+            img {
+              width: 80px;
+              height: 97px;
+              margin-top: -26px;
+            }
+          }
+        }
+
+        picture {
+          width: 133px;
+          height: 122px;
+          margin-bottom: 29px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center center;
+          }
+        }
+
+        span {
+          display: block;
+          color: #727272;
+
+          padding-left: 54px;
+          letter-spacing: 1.7px;
+          position: relative;
+          line-height: 1.5;
+          font-weight: 500;
+
+          &:after {
+            content: "";
+            width: 34px;
+            height: 34px;
+            display: block;
+            background: url("../img/checkbox.svg") center center no-repeat;
+            position: absolute;
+            top: 5px;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &__head {
+    padding-top: 57px;
+    margin-bottom: 60px;
+
+    h2 {
+      display: block;
+      margin-bottom: 36px;
+    }
+
+    p {
+      width: 510px;
+      font-size: 20px;
+      color: #3f3f42;
+    }
+  }
+
+  &__ul {
+    position: relative;
+
+    > img {
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    ul {
+      position: relative;
+      z-index: 10;
+    }
+  }
+}

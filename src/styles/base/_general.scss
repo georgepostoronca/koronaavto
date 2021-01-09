@@ -1,6 +1,7 @@
 $blue: #5160a4;
 $silver: #f1f2f5;
 $silverD: #727272;
+$blackL: #3f3f42;
 
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
@@ -10,7 +11,7 @@ h1, h2, h3, h4, h5, h6, ul {
 .container {
     padding-left: 20px;
     padding-right: 20px;
-    max-width: 1160px;
+    width: 1160px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -22,6 +23,13 @@ body {
 
 h2 {
     color: $blue;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 1.12px;
+
+    &.white {
+        color: #fff;
+    }
 
     &.hash {
         letter-spacing: 1.5px;
@@ -34,6 +42,8 @@ h2 {
 p {
     margin-top: 0;
     letter-spacing: 1.3px;
+    font-size: 18px;
+    line-height: 1.5;
 
     &.max {
         color: $silverD;
