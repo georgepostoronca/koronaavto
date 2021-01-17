@@ -5,10 +5,19 @@ block variables
 	- const title = "korona avto"
 
 block content
-	include ../blocks/modules/region/region
-	include ../blocks/modules/parteners/parteners
-	include ../blocks/modules/makemoney/makemoney
-	include ../blocks/modules/detail/detail
+	#wrapper
+		.block-overflow-hidden
+			include ../blocks/modules/header/header
+			include ../blocks/modules/wehelp/wehelp
+			include ../blocks/modules/toorder/toorder
+		include ../blocks/modules/partnersrisk/partnersrisk
+		include ../blocks/modules/freedeliv/freedeliv
+		include ../blocks/modules/runposition/runposition
+		include ../blocks/modules/region/region
+		.block-overflow-hidden
+			include ../blocks/modules/parteners/parteners
+			include ../blocks/modules/makemoney/makemoney
+		include ../blocks/modules/detail/detail
 
 block scripts
 	script(src="js/main.js")

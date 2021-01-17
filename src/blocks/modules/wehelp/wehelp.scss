@@ -1,0 +1,49 @@
+.wehelp {
+  background: #f1f2f5;
+
+  h2 {
+    margin-bottom: 31px;
+  }
+
+  &__wrap {
+    background: url("../img/wehelp-bg.png") right bottom no-repeat;
+  }
+
+  &__text {
+    > span {
+      font-size: 30px;
+      font-weight: bold;
+      color: #959698;
+      margin-bottom: 18px;
+      display: block;
+    }
+
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        b {
+          font-size: 67px;
+          font-weight: 800;
+          line-height: 1;
+          color: $blue;
+          letter-spacing: 3.6px;
+        }
+
+        span {
+          padding-left: 10px;
+          font-size: 25px;
+          line-height: 1;
+        }
+      }
+    }
+
+    img {
+      margin-left: -288px;
+      margin-top: 35px;
+      margin-bottom: 64px;
+    }
+  }
+}

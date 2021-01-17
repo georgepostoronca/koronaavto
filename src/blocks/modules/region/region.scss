@@ -1,157 +1,253 @@
 .region {
-  background-color: #f1f2f5;
-  background: #f1f2f5 url("../img/hears-single.svg") left top no-repeat;
-  background-size: 436px;
-  background-position: -7.7% 8%;
-  overflow: hidden;
+    background-color: #f1f2f5;
+    background: #f1f2f5 url("../img/hears-single.svg") left top no-repeat;
+    background-size: 436px;
+    background-position: -7.7% 8%;
+    overflow: hidden;
 
-  &__head {
-    text-align: center;
-    padding-top: 86px;
+    &.freedeliv {
+        background: #f1f2f5;
 
-    h2 {
-      margin-bottom: 8px;
-      position: relative;
-      z-index: 2;
-    }
-
-    p {
-      margin-bottom: 0;
-      position: relative;
-      z-index: 2;
-    }
-  }
-
-  &__content {
-    background: url("../img/regions.png") center center no-repeat;
-    background-size: cover;
-    //margin-top: -40px;
-
-    h2 {
-
-    }
-  }
-
-  &__map {
-    position: absolute;
-    top: 28%;
-    right: -95px;
-    width: 682px;
-  }
-
-  &__wrap {
-    color: #fff;
-    padding-top: 300px;
-    padding-bottom: 255px;
-    position: relative;
-
-    h2 {
-      margin-bottom: 123px;
-    }
-
-    > ul {
-      list-style: none;
-
-      > li {
-        position: relative;
-        padding-left: 67px;
-        margin-bottom: 37px;
-
-        svg {
-          width: 32px;
-          height: 32px;
-          fill: #fff;
-          position: absolute;
-          top: 0;
-          left: 0;
+        .region__content {
+            background: url("../img/freedeliv-bg.png") center center no-repeat;
+            background-size: cover;
         }
 
-        b {
-          font-size: 24px;
-          letter-spacing: 0.55px;
-          display: block;
-          margin-bottom: 8px;
+        .region__wrap {
+            padding-top: 356px;
+            padding-bottom: 307px;
+
+            h2 {
+                line-height: 1;
+
+                margin-bottom: 21px;
+            }
+
+            > p {
+                font-size: 20px;
+                font-weight: 300;
+            }
+
+            > ul {
+                margin-top: 89px;
+
+                li {
+                    &:nth-child(4) {
+                        img {
+                            width: 54px;
+                            margin-left: -10px;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        img {
+                            width: 33px;
+                        }
+
+                        b {
+                            position: relative;
+                            top: 8px;
+                        }
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 34px;
+                    }
+
+                    img {
+                        width: 40px;
+                        max-height: 40px;
+                    }
+
+                    p {
+                        margin-top: 2px;
+                    }
+                }
+            }
+        }
+
+        .region__aside {
+            margin-top: -70px;
+
+            &-item {
+                &:not(:last-child) {
+                    margin-bottom: 14px;
+                }
+
+                b {
+                    font-size: 72px;
+                }
+                span {
+                    width: 282px;
+                    padding-left: 20px;
+                    padding-bottom: 7px;
+                }
+            }
+        }
+
+        .region__bottom {
+            margin-top: -53px;
+
+            li {
+                font-size: 18px;
+                line-height: 1.4;
+            }
+        }
+    }
+
+    &__head {
+        text-align: center;
+        padding-top: 86px;
+
+        h2 {
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 2;
         }
 
         p {
-          font-size: 18px;
-          line-height: 1.3;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
         }
+    }
+
+    &__content {
+        background: url("../img/regions.png") center center no-repeat;
+        background-size: cover;
+        //margin-top: -40px;
+
+        h2 {
+
+        }
+    }
+
+    &__map {
+        position: absolute;
+        top: 28%;
+        right: -95px;
+        width: 682px;
+    }
+
+    &__wrap {
+        color: #fff;
+        padding-top: 300px;
+        padding-bottom: 255px;
+        position: relative;
+
+        h2 {
+            margin-bottom: 123px;
+        }
+
+        > ul {
+            list-style: none;
+
+            > li {
+                position: relative;
+                padding-left: 67px;
+                margin-bottom: 37px;
+
+                svg, img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 32px;
+                    max-height: 32px;
+                    fill: #fff;
+                }
+
+                b {
+                    font-size: 24px;
+                    letter-spacing: 0.55px;
+                    display: block;
+                    //margin-bottom: 8px;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 1.3;
+                    margin-top: 8px;
+                }
+
+                ul {
+                    list-style: none;
+                    margin-bottom: 10px;
+                    margin-top: 8px;
+
+                    li {
+                        font-size: 18px;
+                        position: relative;
+                        padding-left: 25px;
+                        margin-bottom: 3px;
+
+                        &:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 5px;
+                            left: 9px;
+                            width: 7px;
+                            height: 7px;
+                            border-radius: 100%;
+                            background-color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__aside {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: -129px;
+        margin-right: 4px;
+
+        &-item {
+            display: flex;
+            align-items: flex-end;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+
+            b {
+                font-size: 87px;
+                line-height: 1;
+            }
+
+            span {
+                box-sizing: border-box;
+                display: block;
+                width: 200px;
+                font-size: 18px;
+                padding-left: 14px;
+                padding-bottom: 10px;
+                line-height: 1.3;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 34px;
 
         ul {
-          list-style: none;
-          margin-bottom: 10px;
+            list-style-position: inside;
 
-          li {
-            font-size: 18px;
-            position: relative;
-            padding-left: 25px;
-            margin-bottom: 3px;
-
-            &:before {
-              content: "";
-              width: 7px;
-              height: 7px;
-              display: block;
-              border-radius: 100%;
-              background-color: #fff;
-              position: absolute;
-              top: 5px;
-              left: 9px;
+            &.notdot {
+                list-style: none;
             }
-          }
+
+            li {
+                font-style: italic;
+                font-size: 18px;
+                margin-bottom: 4px;
+
+                &::marker {
+                    margin-right: 10px;
+                }
+            }
         }
-      }
     }
-  }
-
-  &__aside {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-    margin-top: -129px;
-    margin-right: 4px;
-
-    &-item {
-      display: flex;
-      align-items: flex-end;
-
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
-
-      b {
-        font-size: 87px;
-        line-height: 1;
-      }
-
-      span {
-        display: block;
-        width: 200px;
-        font-size: 18px;
-        box-sizing: border-box;
-        padding-left: 14px;
-        padding-bottom: 10px;
-        line-height: 1.3;
-      }
-    }
-  }
-
-  &__bottom {
-    margin-top: 34px;
-
-    ul {
-      list-style-position: inside;
-
-      li {
-        font-style: italic;
-        font-size: 18px;
-        margin-bottom: 4px;
-
-        &::marker {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
 }

@@ -1,3 +1,4 @@
+//$blue: #5160a4;
 $blue: #5160a4;
 $silver: #f1f2f5;
 $silverD: #727272;
@@ -6,6 +7,15 @@ $blackL: #3f3f42;
 h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
+}
+
+.block-overflow-hidden {
+    overflow: hidden;
+}
+
+#wrapper {
+    max-width: 1920px;
+    min-width: 1200px;
 }
 
 .container {
@@ -49,5 +59,29 @@ p {
         color: $silverD;
         font-size: 35px;
         line-height: 24px;
+    }
+}
+
+.btn {
+    outline: none;
+    background-color: #003690;
+    display: inline-block;
+    padding: 8px 19px;
+    border-radius: 4px;
+
+    transition: .2s;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        opacity: .9;
+    }
+
+    span {
+        color: #fff;
+        font-size: 13px;
+        display: block;
+        text-align: center;
+        letter-spacing: 0.4px;
     }
 }
